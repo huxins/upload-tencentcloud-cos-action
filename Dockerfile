@@ -1,9 +1,7 @@
 FROM python:3.6-alpine
 
-LABEL maintainer="Mioto <yaku.mioto@gmail.com>"
+LABEL maintainer="Huxin <huxins@163.com>"
 
-WORKDIR /app
-
-COPY . /app
+COPY . /
 
 ENTRYPOINT ["sh","upload.sh"]
