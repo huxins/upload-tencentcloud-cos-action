@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Sending message
+      - name: Upload file
         uses: ./
         with:
           secret_id: ${{ secrets.cos_secret_id }}
