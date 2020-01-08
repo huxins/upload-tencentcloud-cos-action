@@ -1,0 +1,28 @@
+name: 'upload-tencentcloud-cos-action'
+description: 'Upload to COS in github action'
+author: HuXin <huxins@163.com>
+branding:
+  icon: 'upload'
+  color: 'blue'
+inputs:
+  secret_id:
+    description: Secret id
+    required: true
+  secret_key:
+    description: Secret key
+    required: true
+  bucketname_appid:
+    description: bucketname_appid
+    required: true
+  region:
+    description: region
+    required: true
+  localpath:
+    description: localpath
+    required: true
+  cospath:
+    description: cospath
+    required: true
+runs:
+  using: 'docker'
+  image: 'Dockerfile'

@@ -1,0 +1,20 @@
+---
+name: upload-tencentcloud-cos-action
+
+on: [push]
+
+jobs:
+  integration:
+    name: Integration test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Sending message
+        uses: ./
+        with:
+          secret_id: ${{ secrets.cos_secret_id }}
+          secret_key: ${{ secrets.cos_secret_key }}
+          bucketname_appid: ${{ secrets.cos_bucketname_appid }}
+          region: ${{ secrets.cos_region }}
+          localpath: /etc/os-release
+          cospath: update/upload.sh
