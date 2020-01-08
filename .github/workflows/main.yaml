@@ -17,4 +17,4 @@ jobs:
           bucketname_appid: ${{ secrets.cos_bucketname_appid }}
           region: ${{ secrets.cos_region }}
           localpath: /etc/os-release
-          cospath: update/upload.sh
+          cospath: update/os-release

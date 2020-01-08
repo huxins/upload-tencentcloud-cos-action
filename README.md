@@ -17,7 +17,7 @@ on: [push]
 
 jobs:
   upload:
-    name: Server chan
+    name: Upload cos
     runs-on: ubuntu-latest
     steps:
       - name: upload file
