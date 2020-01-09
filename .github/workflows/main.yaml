@@ -16,6 +16,6 @@ jobs:
           secret_key: ${{ secrets.cos_secret_key }}
           bucketname_appid: ${{ secrets.cos_bucketname_appid }}
           region: ${{ secrets.cos_region }}
-          localpath: /usr/share/awk
-          cospath: update/
+          localpath: /etc/ssl/misc/
+          cospath: update/etc/ssl/
           folder: yes
