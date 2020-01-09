@@ -4,4 +4,4 @@ LABEL maintainer="Huxin <huxins@163.com>"
 
 COPY . /
 
-ENTRYPOINT ["sh","upload.sh"]
+ENTRYPOINT ["sh","/upload.sh"]
