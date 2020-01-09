@@ -23,6 +23,8 @@ inputs:
   cospath:
     description: cospath
     required: true
+  folder:
+    description: folder
 runs:
   using: 'docker'
   image: 'Dockerfile'
